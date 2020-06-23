@@ -7,6 +7,8 @@ USER node
 # Creating a new directory for app files and setting path in the container
 RUN mkdir -p /home/node/app && chown -R node:node /home/node/app
 
+RUN npm i -g typescript
+
 # setting working directory in the container
 WORKDIR /home/node/app
 
